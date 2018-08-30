@@ -1,0 +1,103 @@
+<html>
+  <head><title>Color Manassas - Color Me Mine Franchise</title>
+    <link rel="stylesheet" href="styles.css"/>
+
+
+  </head>
+  <body>
+      
+      
+      <div class="topnav">
+          <a  href="https://manassas.colormemine.com"><i><img src="https://manassas.colormemine.com/wp-content/themes/colorfranchise/images/logo.png" alt="Logo" /></i></a>
+          <br/>(703) 686-4394 Manassas<br/>
+      </div>
+      
+      <div class="content">
+          <h2>Welcome! Please Sign In</h2>
+        
+         
+         <div class="form-group f1 required" data-fid="f1">
+             <label class="control-label" for="f1">First Name</label>
+             <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-user"></i> </span>
+                 <input type="text" class="form-control" id="f1" name="f1" value=""   placeholder="First Name"
+                 data-rule-required="true"
+                 data-rule-minlength="3"   />
+             </div>
+         </div>
+         
+         
+         
+         
+         <div class="form-group f5 required" data-fid="f5">
+             <label class="control-label" for="f2">Last Name</label>
+             
+             <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-user"></i> </span>
+                 <input type="text" class="form-control" id="f2" name="f2" value=""   placeholder="Last Name"
+                 data-rule-required="true" data-msg-required="Last name is required."
+                 data-rule-minlength="3"   />
+             </div>
+             
+             
+         </div>
+         
+         
+         
+         
+         <div class="form-group f2 required" data-fid="f3">
+             <label class="control-label" for="f3">Email</label>
+             
+             <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-envelope"></i> </span>
+                 <input type="email" class="form-control" id="f3" name="f3" value=""
+                 data-rule-email="true" placeholder="xxx@xxx.xxx"
+                 data-rule-required="true" data-msg-required="email is required"  />
+             </div>
+             
+         </div>
+         
+         
+         <div class="form-group f7 required" data-fid="f7">
+             <label class="control-label" for="f7">Zip Code</label>
+             
+             <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-earphone"></i> </span>
+                 <input type="text" class="form-control " id="f7" name="f7" value=""   placeholder="zip code"
+                 data-rule-number="true"
+                 data-rule-required="true" data-msg-required="zipcode is required"   /></div>
+             
+             
+         </div>
+         
+         <div class="form-group f6 required" data-fid="f4">
+             <label class="control-label" for="f4">Phone</label>
+             
+             <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-earphone"></i> </span>
+                 <input type="tel" class="form-control" id="f4" name="f4" value=""   placeholder="xxx-xxx-xxxx"
+                 data-rule-pattern="[0-9]{3,4}[ -.]*[0-9]{3,4}[ -.]*[0-9]{4}" data-msg-pattern="Invalid phone number"
+                 data-rule-required="true" data-msg-required="Phone number is required"   />
+             </div>
+             
+             
+         </div>
+         
+         <div class="form-group f6 required" data-fid="f4">
+             <label  class="control-label" for="f5">
+                 <input id="f5" type="checkbox" name="f5" checked>
+                     allow texting to this number
+                     </label>
+             <p>
+             <a href="terms-and-conditions.html">Read our Terms and Conditions on Texting</a>
+             </p>
+         </div>
+         
+         <input type="submit" class="buttons" value="Sign In" id="searchButton">
+         <br/><span id="responseReturned"></span>
+             
+      </div>
+      
+      <div class="footer">
+           <h3>We use the above information to contact you if required. Please make sure you provide the correct information</h3>
+      </div>
+
+    <script src="cmm.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+  </body>
+</html>
