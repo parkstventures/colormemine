@@ -1,0 +1,24 @@
+﻿AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: function to insert new customer record
+Resources:
+  CMMNewCustomer:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: python2.7
+      CodeUri: .
+      Description: function to insert new customer record
+      MemorySize: 128
+      Timeout: 90
+      Role: 'arn:aws:iam::527192792900:role/CMMRoleforLambda'
+      Events:
+        Api1:
+          Type: Api
+          Properties:
+            Path: /
+            Method: POST
+      Environment:
+        Variables:
+          DB_TABLE_NAME: customer
+          SNS_TOPIC: 'arn:aws:sns:us-east-1:527192792900:CMMManassas'

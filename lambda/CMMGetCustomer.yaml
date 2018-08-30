@@ -1,0 +1,23 @@
+﻿AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: function to read customers either by last name or current date
+Resources:
+  CMMGetCustomer:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: python2.7
+      CodeUri: .
+      Description: function to read customers either by last name or current date
+      MemorySize: 128
+      Timeout: 30
+      Role: 'arn:aws:iam::527192792900:role/CMMRoleforLambda'
+      Events:
+        Api1:
+          Type: Api
+          Properties:
+            Path: /
+            Method: GET
+      Environment:
+        Variables:
+          DB_TABLE_NAME: customer
